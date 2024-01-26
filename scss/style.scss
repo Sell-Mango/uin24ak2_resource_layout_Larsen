@@ -11,7 +11,7 @@ $font: 'Montserrat', sans-serif;
 
 //document setup
 $root-size: calc(1em + 1vw); 
-$document-width: 1140px;
+$document-width: 1260px;
 $document-gutter: 1.5rem;
 
 @mixin flexy($display, $direction, $justify-content) {

@@ -6,7 +6,6 @@ content_items();
 
 const tabs = document.querySelectorAll(".tab");
 
-
 tabs.forEach ((tab, index) => { //Brukte disse postene fra StackOverflow posten til å finne svar på toggling av faner: https://stackoverflow.com/questions/55439746/vanilla-javascript-show-tab-and-hide-others, https://stackoverflow.com/questions/66978996/is-there-a-better-way-of-creating-tabs-using-vanilla-javascript-than-this 
     if (index == 0) {
         document.querySelector('.tab').classList.add('tab-active');
