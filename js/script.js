@@ -33,7 +33,7 @@ tabs.forEach ((tab, index) => { //Brukte disse postene fra StackOverflow posten 
 
 function tab_items() {
 
-    resources.map(recourse => tabsHTML += `<li class="tab"><a href="#${recourse.category}">${recourse.category}</li>`);
+    resources.map(recourse => tabsHTML += `<li class="tab"><a href="#">${recourse.category}</li>`);
 
     const main = document.getElementsByTagName("ul");
     main[0].innerHTML = tabsHTML;
@@ -43,7 +43,7 @@ function tab_items() {
 function content_items() {
 
     resources.map(recourse => contentHTML += `
-    <article id="${recourse.category}" class="tab-content">
+    <article class="tab-content">
         <h2>${recourse.category}</h2>
         <p>${recourse.text}</p>
         <ul>
